@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",  // Ana dosyanın adını buraya yaz (örneğin server.js)
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"  // Ana dosyanın adını buraya yaz
+    }
+  ]
+}
