@@ -37,7 +37,7 @@ const adminAuth = (req: any, res: any, next: any) => {
 export async function registerRoutes(app: Express): Promise<Server> {
   // Enable express session
   app.use(session({
-    secret: process.env.SESSION_SECRET || 'default-secret',
+    secret: process.env.SESSION_SECRET || '07de84cbbea883bc4c881370359c349151274a6e45994ba235bcccb445921358',
     resave: false,
     saveUninitialized: false,
     cookie: { secure: false, maxAge: 24 * 60 * 60 * 1000 } // 24 hours
