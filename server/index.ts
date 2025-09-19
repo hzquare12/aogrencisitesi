@@ -47,7 +47,7 @@ app.use((req, res, next) => {
     throw err;
   });
 
-  if (app.get("env") === "development") {
+  if (app.get("env") === "production") {
     await setupVite(app, server);
   } else {
     serveStatic(app);
